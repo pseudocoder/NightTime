@@ -1,5 +1,5 @@
 text {
-  font-size: 25;
+  font-size: 28;
   font-family: SevilleSharp-Regular;
   text-length: 80;
   text-anchor: middle;
@@ -17,11 +17,10 @@ text {
 }
 
 #myDate {
-  font-size: 32;
+  font-size: 34;
 }
 
-#myHR {
-  font-size: 32;
+#HRtext {
+  font-size: 34;
   font-weight: bold;
-  text-anchor: middle;
 }

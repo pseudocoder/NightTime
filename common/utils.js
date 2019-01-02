@@ -15,13 +15,27 @@ export function hex2a(hex) {
 //Formats the hour based on the user pref
 export function formatHour(hour, clockPref) {
   if (clockPref == '12h'){
-    if(hour > 12) {
+    if (hour > 12) {
       hour -= 12;
-    } else if(hour == 0) {
-      hour = "12";
+    } else if (hour == 0) {
+      hour = 12;
     }
   }
+  else {
+    hour = zeroPad(hour);
+  }
+  
   return hour;
+}
+
+export function hourBetween(hour, start, end) {
+  if (start == end) return false;
+  
+  if (start < end) {
+    return (hour >= start && hour < end);
+  }
+  
+  return (hour >= start || hour < end);
 }
 
 export function hexcolor(colString) {

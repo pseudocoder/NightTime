@@ -1,32 +1,41 @@
 <svg class="background">
-  <text id="myTime" x="50%" y="90" />
+  <text id="myTime" x="50%" y="100" />
 
-  <line id="upperLine" x1="15" y1="106" x2="100%-15" y2="106" fill="#f8f8f8" stroke-width="1" />
-  <text id="myDate" x="50%" y="134" />
-  <line id="bottomLine" x1="15" y1="140" x2="100%-15" y2="140" fill="#f8f8f8" stroke-width="1" />
+  <line id="upperLine" x1="15" y1="116" x2="100%-15" y2="116" fill="#f8f8f8" stroke-width="1" opacity="0.6" />
+  <text id="myDate" x="50%" y="146" />
+  <line id="bottomLine" x1="15" y1="153" x2="100%-15" y2="153" fill="#f8f8f8" stroke-width="1" opacity="0.6" />
   
-  <image x="15%-15" y="170" width="30" height="30" href="steps.png" />
-  <arc x="15%-25" y="158" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
-  <arc id="stepsRing" x="15%-25" y="158" width="50" height="50" fill="#4edcfb" arc-width="3" start-angle="0" sweep-angle="90" />
-  <text id="stepsText" x="15%" y="235" />
+  <image x="15%-14" y="178" width="28" height="32" href="steps2.png" />
+  <arc x="15%-25" y="168" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
+  <arc id="stepsRing" x="15%-25" y="168" width="50" height="50" fill="#4edcfb" arc-width="3" start-angle="0" sweep-angle="90" />
+  <text id="stepsText" x="15%" y="245" />
 
-  <image x="38%-12" y="173" width="25" height="25" href="stairs.png" />
-  <arc x="38%-25" y="158" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
-  <arc id="stairsRing" x="38%-25" y="158" width="50" height="50" fill="#16c200" arc-width="3" start-angle="0" sweep-angle="90" />
-  <text id="stairsText" x="38%" y="235" />
+  <image x="38%-14" y="178" width="28" height="32" href="stairs2.png" />
+  <arc x="38%-25" y="168" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
+  <arc id="stairsRing" x="38%-25" y="168" width="50" height="50" fill="#16c200" arc-width="3" start-angle="0" sweep-angle="90" />
+  <text id="stairsText" x="38%" y="245" />
 
-  <image x="62%-10" y="168" width="20" height="30" href="cals.png" />
-  <arc x="62%-25" y="158" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
-  <arc id="calsRing" x="62%-25" y="158" width="50" height="50" fill="#ff882c" arc-width="3" start-angle="0" sweep-angle="90" />
-  <text id="calsText" x="62%" y="235" />
+  <image x="62%-14" y="178" width="28" height="32" href="cals2.png" />
+  <arc x="62%-25" y="168" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
+  <arc id="calsRing" x="62%-25" y="168" width="50" height="50" fill="#ff882c" arc-width="3" start-angle="0" sweep-angle="90" />
+  <text id="calsText" x="62%" y="245" />
 
-  <image x="85%-10" y="173" width="20" height="25" href="mins.png" />
-  <arc x="85%-25" y="158" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
-  <arc id="minsRing" x="85%-25" y="158" width="50" height="50" fill="#dc00f6" arc-width="3" start-angle="0" sweep-angle="90" />
-  <text id="minsText" x="85%" y="235" />
+  <image x="85%-14" y="178" width="28" height="32" href="mins2.png" />
+  <arc x="85%-25" y="168" width="50" height="50" fill="#666666" arc-width="2" start-angle="0" sweep-angle="360" />
+  <arc id="minsRing" x="85%-25" y="168" width="50" height="50" fill="#dc00f6" arc-width="3" start-angle="0" sweep-angle="90" />
+  <text id="minsText" x="85%" y="245" />
 
-  <image x="40%-15" y="252" width="35" height="35" href="heart.png" />
-  <text id="myHR" x="60%" y="280" />
+  <text id="battery" x="22%" y="288" text-anchor="start" />
+  <rect id="batpct" x="15%-8" y="267" width="16" height="24" fill="#000000" />
+  <image x="15%-9" y="262" width="18" height="31" href="battery.png" />
   
-  <rect id="dimmer" x="0" y="155" width="100%" height="56" fill="#000000" opacity = "0.4" visibility="hidden" />
+  <image id="HRimage" x="62%-20" y="258" width="40" height="40" href="heart.png">
+    <animate id="animation" attributeName="opacity" begin="load" from="1" to="1" dur="1" repeatCount="indefinite" />
+  </image>
+
+  <text id="HRtext" x="80%" y="289" />
+
+  <rect id="dimmer" x="0" y="165" width="100%" height="56" fill="#000000" opacity = "0.4" visibility="hidden" />
+  <rect id="dimmer2" x="62%-20" y="258" width="40" height="40" fill="#000000" opacity = "0.4" visibility="hidden" />
+  <rect id="dimmer3" x="15%-9" y="262" width="18" height="31" fill="#000000" opacity = "0.4" visibility="hidden" />
 </svg>
