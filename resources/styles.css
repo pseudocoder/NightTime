@@ -1,0 +1,27 @@
+text {
+  font-size: 25;
+  font-family: SevilleSharp-Regular;
+  text-length: 80;
+  text-anchor: middle;
+  fill: #f8f8f8;
+}
+
+.background {
+  viewport-fill: black;
+}
+
+#myTime {
+  font-size: 100;
+  font-weight: bold;
+  font-family: SevilleSharp-Bold;
+}
+
+#myDate {
+  font-size: 32;
+}
+
+#myHR {
+  font-size: 32;
+  font-weight: bold;
+  text-anchor: middle;
+}
