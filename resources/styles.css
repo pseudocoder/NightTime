@@ -16,8 +16,16 @@ text {
   font-family: SevilleSharp-Bold;
 }
 
+.ionic #myTime {
+  font-size: 90;
+}
+
 #myDate {
   font-size: 34;
+}
+
+.ionic #myDate {
+  font-size: 30;
 }
 
 #HRtext {

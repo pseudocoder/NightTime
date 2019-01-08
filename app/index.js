@@ -5,8 +5,9 @@ import { HeartRateSensor } from "heart-rate";
 import { locale } from "user-settings";
 import { preferences } from "user-settings";
 import { battery } from "power";
+import { inbox } from "file-transfer"
 import { me as device } from "device";
-import * as messaging from "messaging";
+import * as fs from "fs";
 
 import * as util from "../common/utils";
 import * as config from "../common/config";
@@ -66,21 +67,21 @@ function updateClock(force) {
       prefix = 'en';
     }
 
-    let datestring = config.get("datefmt").replace("dd", day).replace("mm", month).replace("yyyy", year);
+    let datestring = config.get("datefmt").replace("dd", day).replace("mm", month).replace("yyyy", year).replace("yy", year % 100);
 
     document.getElementById("myTime").text = `${hours}:${mins}`; 
     document.getElementById("myDate").text = `${util.weekday[prefix][wday]}  ${datestring}`;
 
     let bat = Math.floor(battery.chargeLevel);
-
     document.getElementById("battery").text = bat + "%";
 
     let batpct = document.getElementById("batpct");
+    let batpcttop = document.getElementById("batpcttop").y;
     batpct.style.fill = (bat < 17 ? "#f81373" : (bat < 31 ? "#ffb230" : "#2adf2a"));
-    batpct.y = 291 - bat / 4;
+    batpct.y = batpcttop - bat / 4;
     batpct.height = bat / 4;
   }
-  
+
   if ( (Date.now() - lastValueTimestamp)/1000 > 5 ) {
     setHeartrate(0);
   }
@@ -108,6 +109,10 @@ function setControl(val, goal, ctrl) {
 clock.granularity = "seconds";
 clock.ontick = () => updateClock(false);
 
+// Process files from companion
+inbox.addEventListener("newfile", processInbox);
+processInbox();
+
 // Don't start with a blank screen
 updateClock(true);
 
@@ -126,12 +131,19 @@ function applyTheme(night) {
   document.getElementById("dimmer3").style.visibility = (night ? "visible" : "hidden");
 }
 
-messaging.peerSocket.onmessage = function(evt) {
-  console.log("Device got: " + evt.data);
+function processInbox() {
+  let filename;
   
-  let msg = JSON.parse(evt.data);
-  
-  config.set(msg.key, msg.value);
-
-  updateClock(true);
+  while (filename = inbox.nextFile()) {
+    console.log("File received: " + filename);
+    
+    if (filename == "config.cbor") {
+      config.setConfig(fs.readFileSync("config.cbor", "cbor"));
+      updateClock(true);
+      setHeartrate(hrm.heartRate);
+    }
+    else {
+      fs.unlinkSync(filename);
+    }
+  }
 }
