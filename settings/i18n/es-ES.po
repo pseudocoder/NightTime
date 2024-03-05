@@ -1,0 +1,83 @@
+msgid "donate1"
+msgstr "Si te gusta esta esfera de reloj te agradecería una"
+
+msgid "donate2"
+msgstr "donación de 2,50CHF"
+
+msgid "donate3"
+msgstr "a través de PayPal"
+
+msgid "dateformat"
+msgstr "Formato de fecha"
+
+msgid "timeformat"
+msgstr "Formato de tiempa"
+
+msgid "default"
+msgstr "predeterminado"
+
+msgid "24h"
+msgstr "24h"
+
+msgid "12h"
+msgstr "12h"
+
+msgid "am/pm"
+msgstr "am/pm"
+
+msgid "seconds"
+msgstr "segundos"
+
+msgid "nightstart"
+msgstr "Inicio de la noche"
+
+msgid "nightend"
+msgstr "Fin de la noche"
+
+msgid "animatedheartbeat"
+msgstr "Corazón animado"
+
+msgid "clickablestats"
+msgstr "Estadísticas clicables"
+
+msgid "daytimetext"
+msgstr "Texto diurno"
+
+msgid "nighttimetext"
+msgstr "Texto nocturno"
+
+msgid "statistic"
+msgstr "Estadística"
+
+msgid "steps"
+msgstr "Pasos"
+
+msgid "floors"
+msgstr "Plantas"
+
+msgid "calories"
+msgstr "Calorías"
+
+msgid "kilojoules"
+msgstr "Kilojoules"
+
+msgid "activezoneminutes"
+msgstr "Minutos de actividad"
+
+msgid "distancemetres"
+msgstr "Distancia (metres)"
+
+msgid "distancekm"
+msgstr "Distancia (km)"
+
+msgid "distancemiles"
+msgstr "Distancia (millas)"
+
+msgid "seconds2"
+msgstr "Segundos"
+
+msgid "none"
+msgstr "(ninguno)"
+
+msgid "help"
+msgstr "Puede encontrar más ayuda/preguntas frecuentes en mi sitio web:"

@@ -1,4 +1,7 @@
 {
+  "devDependencies": {
+    "@fitbit/sdk": "~4.3.0"
+  },
   "fitbit": {
     "appUUID": "62eabe67-8b1e-4d30-bd1f-79cf2ecffb1d",
     "appType": "clockface",
@@ -7,19 +10,20 @@
     "wipeColor": "",
     "requestedPermissions": [
       "access_activity",
+      "access_aod",
       "access_heart_rate"
     ],
     "buildTargets": [
+      "higgs",
       "meson",
-      "higgs"
+      "gemini",
+      "mira"
     ],
     "i18n": {
-      "en": {
+      "en-US": {
         "name": "Night Time"
       }
-    }
-  },
-  "devDependencies": {
-    "@fitbit/sdk": "~3.0.0"
+    },
+    "defaultLanguage": "en-US"
   }
 }

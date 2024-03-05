@@ -1,0 +1,83 @@
+msgid "donate1"
+msgstr "If you like this clock face I'd appreciate a"
+
+msgid "donate2"
+msgstr "2.50CHF donation"
+
+msgid "donate3"
+msgstr "through PayPal"
+
+msgid "dateformat"
+msgstr "Date Format"
+
+msgid "timeformat"
+msgstr "Time Format"
+
+msgid "default"
+msgstr "default"
+
+msgid "24h"
+msgstr "24h"
+
+msgid "12h"
+msgstr "12h"
+
+msgid "am/pm"
+msgstr "am/pm"
+
+msgid "seconds"
+msgstr "seconds"
+
+msgid "nightstart"
+msgstr "Night Start"
+
+msgid "nightend"
+msgstr "Night End"
+
+msgid "animatedheartbeat"
+msgstr "Animated Heartbeat"
+
+msgid "clickablestats"
+msgstr "Clickable Stats"
+
+msgid "daytimetext"
+msgstr "Daytime Text"
+
+msgid "nighttimetext"
+msgstr "Nighttime Text"
+
+msgid "statistic"
+msgstr "Statistic"
+
+msgid "steps"
+msgstr "Steps"
+
+msgid "floors"
+msgstr "Floors"
+
+msgid "calories"
+msgstr "Calories"
+
+msgid "kilojoules"
+msgstr "Kilojoules"
+
+msgid "activezoneminutes"
+msgstr "Active Zone Minutes"
+
+msgid "distancemetres"
+msgstr "Distance (metres)"
+
+msgid "distancekm"
+msgstr "Distance (km)"
+
+msgid "distancemiles"
+msgstr "Distance (miles)"
+
+msgid "seconds2"
+msgstr "Seconds"
+
+msgid "none"
+msgstr "(none)"
+
+msgid "help"
+msgstr "You can find more help / FAQs on my website:"

@@ -1,34 +1,424 @@
 text {
   font-size: 28;
-  font-family: SevilleSharp-Regular;
+  font-family: System-Regular;
   text-length: 80;
   text-anchor: middle;
-  fill: #f8f8f8;
 }
 
-.background {
-  viewport-fill: black;
-}
-
-#myTime {
+.time {
   font-size: 100;
   font-weight: bold;
-  font-family: SevilleSharp-Bold;
+  font-family: System-Bold;
 }
 
-.ionic #myTime {
-  font-size: 90;
+#time {
+  x: 50%;
+  y: 100;
 }
 
-#myDate {
+.date {
+  x: 50%;
+  y: 146;
   font-size: 34;
+  font-weight: light;
 }
 
-.ionic #myDate {
-  font-size: 30;
+#upperLine {
+  x1: 15;
+  y1: 116;
+  x2: 100%-15;
+  y2: 116;
+  stroke-width: 1;
+}
+
+#bottomLine {
+  x1: 15;
+  y1: 153;
+  x2: 100%-15;
+  y2: 153;
+  stroke-width: 1;
+}
+
+.img {
+  x: 20%;
+  y: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.ring {
+  x: 0;
+  y: 0;
+  arc-width: 4%;
+  width: 100%;
+  height: 100%;
+  fill: #666666;
+  start-angle: 0;
+  sweep-angle: 360;
+}
+
+.arc {
+  x: 0;
+  y: 0;
+  arc-width: 6%;
+  width: 100%;
+  height: 100%;
+  start-angle: 0;
+}
+
+.arc.goal {
+  arc-width: 8%;
+}
+
+text.stat {
+  x: 50%;
+  y: 100%+30;
+}
+
+#stat1area {
+  x: 15%-30;
+  y: 168;
+  width: 60;
+  height: 70;
+  fill: none;
+}
+#smallstat1 {
+  x: 15%-25;
+  y: 168;
+  width: 50;
+  height: 50;
+}
+
+#stat2area {
+  x: 38%-30;
+  y: 168;
+  width: 60;
+  height: 70;
+  fill: none;
+}
+#smallstat2 {
+  x: 38%-25;
+  y: 168;
+  width: 50;
+  height: 50;
+}
+
+#stat3area {
+  x: 62%-30;
+  y: 168;
+  width: 60;
+  height: 70;
+  fill: none;
+}
+#smallstat3 {
+  x: 62%-25;
+  y: 168;
+  width: 50;
+  height: 50;
+}
+
+#stat4area {
+  x: 85%-30;
+  y: 168;
+  width: 60;
+  height: 70;
+  fill: none;
+}
+#smallstat4 {
+  x: 85%-25;
+  y: 168;
+  width: 50;
+  height: 50;
+}
+
+#batimg {
+  y: 262;
+  width: 18;
+  height: 31;
+}
+
+#battery {
+  x: 22%;
+  y: 288; 
+}
+
+#HRimage {
+  x: 62%-20;
+  y: 258;
+  width: 40;
+  height: 40;
 }
 
 #HRtext {
-  font-size: 34;
+  x: 82%;
+  y: 292;
+  font-size: 40;
   font-weight: bold;
+}
+
+.dimmer {
+  fill: #000000;
+  opacity: 0.4;
+  visibility: hidden;
+}
+.dimmer.stats {
+  x: 0;
+  y: 165;
+  width: 100%;
+  height: 56;
+}
+.dimmer.bigstat {
+  x: 15;
+  y: 135;
+  width: 90;
+  height: 90;
+  visibility: hidden;
+}
+.night .dimmer.bigstat {
+  visibility: hidden;
+}
+.night.big .dimmer.bigstat {
+  visibility: visible;
+}
+
+.dimmer.bat {
+  x: 15%-9;
+  y: 262;
+  width: 18;
+  height: 31;
+}
+.dimmer.hr {
+  x: 62%-20;
+  y: 258;
+  width: 40;
+  height: 40;
+}
+
+/* On */
+.on #batimg {
+  x: 15%-9;
+}
+
+.on #batpct {
+  x: 15%-8;
+}
+
+/* Off */
+
+.off .hide {
+  display: none;
+}
+
+.off .ring {
+  arc-width: 1;
+}
+
+.off .arc {
+  arc-width: 2;
+}
+
+.off .arc.goal {
+  arc-width: 3;
+}
+
+.off .date {
+  font-family: System-Light;
+  font-size: 32;
+}
+
+.off #battery {
+  x: 50%;
+  y: 285;
+  font-size: 22;
+  font-weight: light;
+}
+
+.off #batimg {
+  x: 44%-8;
+  y: 264;
+  width: 15;
+  height: 25;
+}
+
+.off #batpct {
+  x: 44%-7;
+}
+
+.off .dimmer.bat {
+  x: 44%-8;
+  y: 264;
+  width: 15;
+  height: 25;
+}
+
+/* Night */
+.night .dimmer {
+  visibility: visible;
+}
+
+/* Off Day */
+.off.day .fill {
+  font-family: System-Light;  
+}
+
+/* Off Night */
+.off.night .fill {
+  font-family: System-Light;  
+}
+
+/* IONIC */
+.ionic .time {
+  font-size: 100;
+}
+
+.ionic #time {
+  font-size: 90;
+  y: 80;
+}
+
+.ionic .date {
+  font-size: 30;
+  y: 114;
+}
+
+.ionic #upperLine {
+  y1: 88;
+  y2: 88;
+}
+.ionic #bottomLine {
+  y1: 119;
+  y2: 119;
+}
+
+.ionic #smallstat1 {
+  y: 126;
+}
+.ionic #smallstat2 {
+  y: 126;
+}
+.ionic #smallstat3 {
+  y: 126;
+}
+.ionic #smallstat4 {
+  y: 126;
+}
+.ionic #stat1area {
+  y: 126;
+}
+.ionic #stat2area {
+  y: 126;
+}
+.ionic #stat3area {
+  y: 126;
+}
+.ionic #stat4area {
+  y: 126;
+}
+
+.ionic #batimg {
+  y: 216;
+}
+.ionic #battery {
+  y: 242; 
+}
+
+.ionic #HRimage {
+  y: 212;
+}
+
+.ionic #HRtext {
+  y: 243;
+}
+
+.ionic .dimmer.stats {
+  y: 126;
+}
+.ionic .dimmer.bat {
+  y: 216;
+}
+.ionic .dimmer.hr {
+  y: 212;
+}
+
+/* Three stats */
+.threestats #smallstat4 {
+  visibility: hidden;
+}
+.threestats #stat4area {
+  visibility: hidden;
+}
+
+.threestats #smallstat1 {
+  x: 20%-25;
+}
+.threestats #stat1area {
+  x: 20%-30;
+}
+
+.threestats #smallstat2 {
+  x: 50%-25;
+}
+.threestats #stat2area {
+  x: 50%-30;
+}
+
+.threestats #smallstat3 {
+  x: 80%-25;
+}
+.threestats #stat3area {
+  x: 80%-30;
+}
+
+#bigfill {
+  x: 0;
+  y: 116;
+  width: 100%;
+  height: 140;
+  fill: black;
+  visibility: hidden;
+}
+.ionic #bigfill {
+  y: 120;
+}
+
+#bigclick {
+  x: 0;
+  y: 116;
+  width: 100%;
+  height: 150;
+  fill: none;
+  visibility: hidden;
+}
+
+.on.big #bigfill {
+  visibility: visible;
+}
+.on.big #bigclick {
+  visibility: visible;
+}
+
+.bigstat {
+  x: 20;
+  y: 140;
+  width: 80;
+  height: 80;
+  visibility: hidden;
+}
+.bigstat text {
+  x: 180;
+  y: 55;
+  font-size: 60;
+}
+
+.on.bigstat1 #bigstat1 {
+  visibility: visible;
+}
+.on.bigstat2 #bigstat2 {
+  visibility: visible;
+}
+.on.bigstat3 #bigstat3 {
+  visibility: visible;
+}
+.on.bigstat4 #bigstat4 {
+  visibility: visible;
 }

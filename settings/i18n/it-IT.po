@@ -1,0 +1,83 @@
+msgid "donate1"
+msgstr "Se vi piace questo quadrante dell'orologio, apprezzerei una "
+
+msgid "donate2"
+msgstr "donazione di 2,50CHF"
+
+msgid "donate3"
+msgstr "tramite PayPal."
+
+msgid "dateformat"
+msgstr "Formato della data"
+
+msgid "timeformat"
+msgstr "Formato della tempo"
+
+msgid "default"
+msgstr "predefinito"
+
+msgid "24h"
+msgstr "24ora"
+
+msgid "12h"
+msgstr "12ora"
+
+msgid "am/pm"
+msgstr "am/pm"
+
+msgid "seconds"
+msgstr "secondi"
+
+msgid "nightstart"
+msgstr "Inizio della notte"
+
+msgid "nightend"
+msgstr "Fine della notte"
+
+msgid "animatedheartbeat"
+msgstr "Cuore animato"
+
+msgid "clickablestats"
+msgstr "Statistiche cliccabili"
+
+msgid "daytimetext"
+msgstr "Testo diurno"
+
+msgid "nighttimetext"
+msgstr "Testo notturno"
+
+msgid "statistic"
+msgstr "Statistica"
+
+msgid "steps"
+msgstr "Passi"
+
+msgid "floors"
+msgstr "Piani"
+
+msgid "calories"
+msgstr "Calorie"
+
+msgid "kilojoules"
+msgstr "Kilojoule"
+
+msgid "activezoneminutes"
+msgstr "Minuti attivi"
+
+msgid "distancemetres"
+msgstr "Distanza (metre)"
+
+msgid "distancekm"
+msgstr "Distanza (km)"
+
+msgid "distancemiles"
+msgstr "Distanza (miglia)"
+
+msgid "seconds2"
+msgstr "Secondi"
+
+msgid "none"
+msgstr "(nessuno)"
+
+msgid "help"
+msgstr "Potete trovare ulteriori aiuti e FAQ sul mio sito web:"

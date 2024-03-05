@@ -1,0 +1,83 @@
+msgid "donate1"
+msgstr "Wenn dir dieses Ziffernblatt gefällt, würde ich mich über eine "
+
+msgid "donate2"
+msgstr "Spende von 2.50CHF"
+
+msgid "donate3"
+msgstr "über PayPal freuen."
+
+msgid "dateformat"
+msgstr "Datumsformat"
+
+msgid "timeformat"
+msgstr "Zeitformat"
+
+msgid "default"
+msgstr "vorgegeben"
+
+msgid "24h"
+msgstr "24Std"
+
+msgid "12h"
+msgstr "12Std"
+
+msgid "am/pm"
+msgstr "am/pm"
+
+msgid "seconds"
+msgstr "Sekunden"
+
+msgid "nightstart"
+msgstr "Nachtbeginn"
+
+msgid "nightend"
+msgstr "Nachtende"
+
+msgid "animatedheartbeat"
+msgstr "Animierter Herzschlag"
+
+msgid "clickablestats"
+msgstr "Klickbare Statistiken"
+
+msgid "daytimetext"
+msgstr "Tagestext"
+
+msgid "nighttimetext"
+msgstr "Nachttext"
+
+msgid "statistic"
+msgstr "Statistik"
+
+msgid "steps"
+msgstr "Schritte"
+
+msgid "floors"
+msgstr "Etagen"
+
+msgid "calories"
+msgstr "Kalorien"
+
+msgid "kilojoules"
+msgstr "Kilojoule"
+
+msgid "activezoneminutes"
+msgstr "Aktiv-Minuten"
+
+msgid "distancemetres"
+msgstr "Distanz (metre)"
+
+msgid "distancekm"
+msgstr "Distanz (km)"
+
+msgid "distancemiles"
+msgstr "Distanz (meilen)"
+
+msgid "seconds2"
+msgstr "Sekunden"
+
+msgid "none"
+msgstr "(keine)"
+
+msgid "help"
+msgstr "Weitere Hilfe / FAQs findest du auf meiner Website:"
